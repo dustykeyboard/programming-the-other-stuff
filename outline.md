@@ -95,13 +95,22 @@ After this, the new branch will be created in GitHub and a _Pull Request_ can be
 
 # Testing
 
+Testing is how you know something works.
+
+You can manually test something in a browser, and know it works for now, on _your_ computer.
+But _writing_ means you know it will continue to work (until the test fails).
+
 Javascript unit testing for small things,
 
 Integration testing, "automated browser testing".
 
 # Deployment
 
-CI/CD, how you get your code into production.
+Deployment is how you get your code into production.
+
+CI/CD is how you don't worry about pushing to production on Friday at 4pm.
+
+Your pipeline can be triggered by the pull-requests and build a new version of the program with those changes in a staging environment to run all of the tests and other checks, reporting any failures. If everything passes without issue, the pipeline can also release the updates to the production environment.
 
 # Documentation
 
