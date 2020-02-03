@@ -20,7 +20,7 @@ But even if you know everything about Javascript, what else do you need to know?
 
 # Javascript
 
-JavaScript is the programming language for the web pages, but it also runs other places, like servers
+JavaScript is the programming language for the web pages, but it also runs other places, like servers.
 
 JavaScript runs when viewing a web page.
 
@@ -47,7 +47,7 @@ AngularJS introduced MVC (Model, View, Controller) design pattern, allowing prog
 React was designed to simplify updating the web page's HTML by manipulating a _shadow dom_, a copy of what is rendered in HTML so changes can be applied quickly to this copy, from which a changeset can be compiled to reduce the amount of expensive changes which need to bring the HTML content up to date with the new data.
 React also introduced the `JSX` syntax, to write XML-like syntax, which React then compiles to JavaScript.
 
-Vue provides an MVVM architecture, with HTML templating and virtual dom diffing.
+Vue provides an MVVM (Model, View, Viewmodel) architecture, with HTML templating and virtual dom diffing.
 
 # Package Management
 
@@ -73,6 +73,17 @@ Most are familiar with `console.log`, but this isn't available in early versions
 
 There are a number of other debugging tools which can assist, such as the `debugger` keyword, which will pause execution and allow inspection of the application state, similar to setting `breakpoints` in the developer tools. Once execution has been paused, the code can be stepped through one statement at a time to examine the changes in variables at each stage.
 
+# Testing
+
+Testing is how you know something works.
+
+You can manually test something in a browser, and know it works for now, on _your_ computer.
+But _writing_ means you know it will continue to work (until the test fails).
+
+Javascript unit testing for small things,
+
+Integration testing, "automated browser testing".
+
 # Version Control
 
 Version Control is crucial in software development.
@@ -93,22 +104,15 @@ The changes now exist locally in your branch, to push them back to the project (
 
 After this, the new branch will be created in GitHub and a _Pull Request_ can be created to request the changes be reviewed and merged into the primary branch.
 
-# Testing
-
-Testing is how you know something works.
-
-You can manually test something in a browser, and know it works for now, on _your_ computer.
-But _writing_ means you know it will continue to work (until the test fails).
-
-Javascript unit testing for small things,
-
-Integration testing, "automated browser testing".
-
 # Deployment
 
 Deployment is how you get your code into production.
 
+In the past, it might be FTPing a `.zip` file to a server, unzipping the file and moving it into place. Or FTPing the modified files directly.
+
 CI/CD is how you don't worry about pushing to production on Friday at 4pm.
+
+A CI/CD pipeline is integrated with the version control repository and will be launched automatically when new changes are added to the repository.
 
 Your pipeline can be triggered by the pull-requests and build a new version of the program with those changes in a staging environment to run all of the tests and other checks, reporting any failures. If everything passes without issue, the pipeline can also release the updates to the production environment.
 
@@ -116,7 +120,11 @@ Your pipeline can be triggered by the pull-requests and build a new version of t
 
 Now that you've written the code, it is important to document how it works.
 
-The documentation should primarily cover the expectations and assumptions you've made about the code. If for no other reason than to help you understand it when it doesn't behave as you expect it to in six months time.
+The documentation should primarily cover the expectations and assumptions you've made about the code.
+
+If for no other reason than to help you understand it when it doesn't behave as you expect it to in six months time.
+
+Small comments through a code base can assist when reading and debugging the code, but comprehensive documentation should provide details of the top level interfaces for the application.
 
 # The Product
 
