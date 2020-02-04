@@ -1,17 +1,20 @@
 # Programming: The Other Stuff
 
-1. Introduction
+1. Introduction - You Know JavaScript, what else?
 2. Javascript, HTML and CSS - The Web Presentation Engine
 3. Frameworks - Jquery/React/Vue/Angular
 4. Package Management - NPM/Yarn
 5. Debugging - Chrome/Firefox debugger
-6. Version Control - Git
-7. Testing - Unit/Integration - Jest/Mocha
+6. Testing - Unit/Integration - Jest/Mocha
+7. Version Control - Git
 8. Deployment - CI/CD
 9. Documentation - Define your expectations
 10. The Product - What to write
 
 ## Introduction
+
+> You know JavaScript  
+> What else is there?
 
 The Javascript language has come a long way and the pace of new features only
 seems to be increasing. We have a lot of new tooling to help us build,
@@ -19,7 +22,9 @@ including some great frameworks.
 
 But even if you know everything about Javascript, what else do you need to know?
 
-## Javascript, HTML and CSS
+## JavaScript, HTML and CSS
+
+> The Web Presentation Engine
 
 JavaScript is the programming language for the web pages, but it also runs other places, like servers.
 
@@ -37,6 +42,8 @@ This means that a solid knowledge of HTML and CSS is crucial to excel when creat
 
 ## Frameworks
 
+> jQuery, Angular, React, Vue, ...
+
 Manually manipulating the HTML content is one way to update the content of the page, with tooling built to assist with this (such as Jquery) for many years being the industry standard.
 
 In recent years, frameworks have been adapting to keep pace with the complexity of modern JavaScript applications with the implementation of more formal software design patterns, such as structured view and data models.
@@ -49,6 +56,8 @@ React also introduced the `JSX` syntax, to write XML-like syntax, which React th
 Vue provides an MVVM (Model, View, Viewmodel) architecture, with HTML templating and virtual dom diffing.
 
 ## Package Management
+
+> In an open-source world
 
 Package management a system of tools that automates the process of installing, upgrading, configuring, and removing packages, or pieces of code from a system.
 
@@ -66,6 +75,8 @@ With an account on `NPM` packages can also be contributed either as public, for 
 
 ## Debugging
 
+> The art of making it work
+
 The joy of debugging software depends heavily on the tools available.
 
 Most are familiar with `console.log`, but this isn't available in early versions of Internet Explorer. Debugging javascript application used to rely solely on decrypting mystic error messages and a judicious application of `alert("help")`.
@@ -74,16 +85,20 @@ There are a number of other debugging tools which can assist, such as the `debug
 
 ## Testing
 
+> Making sure you know if it doesn't work
+
 Testing is how you know something works.
 
 You can manually test something in a browser, and know it works for now, on _your_ computer.
 But _writing_ means you know it will continue to work (until the test fails).
 
-Javascript unit testing for small things,
+Javascript unit testing for small things, functions or _units_ of code. These should ideally be ...
 
-Integration testing, "automated browser testing".
+Integration testing, "automated browser testing", tests a whole application's stack, from DNS to server to rendering to application code.
 
 ## Version Control
+
+> git good
 
 Version Control is crucial in software development.
 
@@ -105,6 +120,8 @@ After this, the new branch will be created in GitHub and a _Pull Request_ can be
 
 ## Deployment
 
+> Push to production on a Friday afternoon?
+
 Deployment is how you get your code into production.
 
 In the past, it might be FTPing a `.zip` file to a server, unzipping the file and moving it into place. Or FTPing the modified files directly.
@@ -117,6 +134,8 @@ Your pipeline can be triggered by the pull-requests and build a new version of t
 
 ## Documentation
 
+> Define your assumptions
+
 Now that you've written the code, it is important to document how it works.
 
 The documentation should primarily cover the expectations and assumptions you've made about the code.
@@ -126,5 +145,7 @@ If for no other reason than to help you understand it when it doesn't behave as 
 Small comments through a code base can assist when reading and debugging the code, but comprehensive documentation should provide details of the top level interfaces for the application.
 
 ## The Product
+
+> What to write
 
 Agile, waterfall or something in between, you undoubtedly have tickets.
