@@ -9,7 +9,7 @@
 7. Version Control - Git
 8. Deployment - CI/CD
 9. Documentation - Define your expectations
-10. The Product - What to write
+10. Product - What to build
 
 ## Introduction
 
@@ -144,8 +144,15 @@ If for no other reason than to help you understand it when it doesn't behave as 
 
 Small comments through a code base can assist when reading and debugging the code, but comprehensive documentation should provide details of the top level interfaces for the application.
 
-## The Product
+## Product
 
 > What to write
 
 Agile, waterfall or something in between, you undoubtedly have tickets.
+
+Tickets are created by breaking down Projects. Generally you break down the work until you can complete a piece in less than a day.
+
+Projects are taken from the Roadmap, taking groups of similar high priority work and bundling into a comprehensible scope of work.
+
+A Roadmap explores the pressures and needs of the product to the greatest effect in terms of business value.
+ 
